@@ -1,5 +1,7 @@
-const express = require("express");
-require('dotenv').config()
+import express from "express";
+import dotenv from "dotenv";
+dotenv.config();
+
 const app=express();
 const PORT=process.env.PORT;
 
@@ -12,7 +14,7 @@ app.get("/home",(req,res)=>{
 app.get("/about",(req,res)=>{
     res.send("<h1>About</h1>");
 });
-app.get("/yes",(req,res)=>{
+app.get("/contract",(req,res)=>{
     res.send("<h1>About</h1>");
 });
 
