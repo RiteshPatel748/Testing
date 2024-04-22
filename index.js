@@ -17,6 +17,9 @@ app.get("/about",(req,res)=>{
 app.get("/contract",(req,res)=>{
     res.send("<h1>About</h1>");
 });
+app.get("/new",(req,res)=>{
+    res.send("<h1>About</h1>");
+});
 
 app.listen(PORT,()=>{
     console.log("Your port is %s",PORT);
